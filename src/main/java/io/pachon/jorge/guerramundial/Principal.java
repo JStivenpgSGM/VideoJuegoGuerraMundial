@@ -52,6 +52,7 @@ public class Principal {
         System.out.println(" ");
 
         int capacidadTropas = 0;
+        int capacidadToneladas = 0;
         ArrayList<Integer> Tropas = new ArrayList<Integer>();
         for (int i = 0; i < cantTropas ; i++) {
             System.out.println("Seleccione - restantes: "+ (cantTropas-i));
@@ -67,46 +68,56 @@ public class Principal {
                     System.out.println("Se añade: Jeep de reconocimiento.");
                     Tropas.add(jeep.adicionarTropas(6,5,10));
                     capacidadTropas += jeep.getCapacidadPersonas();
+
                     break;
                 case 1:
                     System.out.println("Se añade: Tanque Sherman M4.");
                     Tropas.add(tanque.adicionarTropas(4,40,50));
                     capacidadTropas += tanque.getCapacidadPersonas();
+                    capacidadToneladas += tanque.getCapacidadToneladas();
                     break;
                 case 2:
                     System.out.println("Se añade: Motocicleta Harley.");
                     Tropas.add(motocicleta.adicionarTropas(2,0,1));
                     capacidadTropas += motocicleta.getCapacidadPersonas();
+                    capacidadToneladas += motocicleta.getCapacidadToneladas();
                     break;
                 case 3:
                     System.out.println("Se añade: Camión de transporte de suministro HI.");
                     Tropas.add(camion.adicionarTropas(18,40,5));
                     capacidadTropas += camion.getCapacidadPersonas();
+                    capacidadToneladas += camion.getCapacidadToneladas();
                     break;
                 case 4:
                     System.out.println("Se añade: Bombardero B56.");
                     Tropas.add(bombardero.adicionarTropas(4,5,30));
                     capacidadTropas += bombardero.getCapacidadPersonas();
+                    capacidadToneladas += bombardero.getCapacidadToneladas();
                     break;
                 case 5:
                     System.out.println("Se añade: Speed Fighter.");
                     Tropas.add(fighter.adicionarTropas(2,1,10));
                     capacidadTropas += fighter.getCapacidadPersonas();
+                    capacidadToneladas += fighter.getCapacidadToneladas();
                     break;
                 case 6:
                     System.out.println("Se añade: Crucero tipo Alabama.");
                     Tropas.add(crucero.adicionarTropas(200,1000,5));
                     capacidadTropas += crucero.getCapacidadPersonas();
+                    capacidadToneladas += crucero.getCapacidadToneladas();
                     break;
                 case 7:
                     System.out.println("Se añade: porta aviones tipo Bismarck.");
                     Tropas.add(portaAvion.adicionarTropas(100,1000,200));
                     capacidadTropas += portaAvion.getCapacidadPersonas();
+                    capacidadToneladas += portaAvion.getCapacidadToneladas();
                     break;
             }
         }
 
-        System.out.println("La capacidad de Personas que se pueden Transportar en el ataque de tropa es de: " + capacidadTropas);
+        System.out.println("La capacidad de Personas que se pueden transportar en el ataque de tropa es de: " + capacidadTropas);
+
+        System.out.println("La capacidad de toneladas que se pueden transportar en el ataque de tropa es de: " + capacidadToneladas);
 
     }
 }

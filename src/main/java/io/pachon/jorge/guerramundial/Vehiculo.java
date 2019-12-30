@@ -18,7 +18,6 @@ public class Vehiculo {
         this.capacidadPersonas = capacidadPersonas;
     }
 
-
     public boolean atacar(){
 
         return true;
@@ -33,6 +32,14 @@ public class Vehiculo {
 
     public int getCapacidadPersonas() {
         return capacidadPersonas;
+    }
+
+    public int getCapacidadToneladas() {
+        return capacidadToneladas;
+    }
+
+    public void setCapacidadToneladas(int capacidadToneladas) {
+        this.capacidadToneladas = capacidadToneladas;
     }
 
     public void setCapacidadPersonas(int capacidadPersonas) {
