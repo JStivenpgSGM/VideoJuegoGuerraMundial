@@ -119,5 +119,73 @@ public class Principal {
 
         System.out.println("La capacidad de toneladas que se pueden transportar en el ataque de tropa es de: " + capacidadToneladas);
 
+        System.out.println(" ");
+
+        ArrayList<Vehiculo> allCars = new ArrayList<Vehiculo>();
+
+        allCars.add(jeep);
+        allCars.add(tanque);
+        allCars.add(motocicleta);
+        allCars.add(camion);
+        allCars.add(bombardero);
+        allCars.add(fighter);
+        allCars.add(crucero);
+        allCars.add(portaAvion);
+
+        for (Vehiculo  vehiculo1 :allCars
+        ) {
+            System.out.println(vehiculo1);
+        }
+
+        ArrayList<ShootableMode> shootableModes = new ArrayList<ShootableMode>();
+
+        shootableModes.add(jeep);
+        shootableModes.add(tanque);
+        shootableModes.add(fighter);
+        shootableModes.add(bombardero);
+        shootableModes.add(camion);
+
+        for (ShootableMode shootableMode1 :shootableModes
+        ) {
+            System.out.println(shootableMode1);
+        }
+
+        ArrayList<ReleasableAtDiscretion> releasableAtDiscretions = new ArrayList<ReleasableAtDiscretion>();
+
+        releasableAtDiscretions.add(tanque);
+        releasableAtDiscretions.add(bombardero);
+        releasableAtDiscretions.add(portaAvion);
+
+        for (ReleasableAtDiscretion releasableAtDiscretions1  :releasableAtDiscretions
+        ) {
+            System.out.println(releasableAtDiscretions1);
+        }
+
+        ArrayList<WeaponableMode> weaponableModes = new ArrayList<WeaponableMode>();
+
+        weaponableModes.add(jeep);
+        weaponableModes.add(tanque);
+        weaponableModes.add(motocicleta);
+        weaponableModes.add(camion);
+        weaponableModes.add(bombardero);
+
+        for (WeaponableMode weaponableMode  :weaponableModes
+        ) {
+            System.out.println(weaponableMode);
+        }
+
+        ArrayList<Flyable> flyables = new ArrayList<Flyable>();
+        flyables.add(fighter);
+
+        for (Flyable flyable  :flyables
+        ) {
+            System.out.println(flyable);
+        }
+
+
     }
+
+
+
+
 }
